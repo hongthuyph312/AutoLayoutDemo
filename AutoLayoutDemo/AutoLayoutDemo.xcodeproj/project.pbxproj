@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B366E501DA26438009D3655 /* Test2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B366E4F1DA26438009D3655 /* Test2Controller.m */; };
 		8B3A2A831D9BAF5400BD20B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A2A821D9BAF5400BD20B8 /* main.m */; };
 		8B3A2A861D9BAF5400BD20B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A2A851D9BAF5400BD20B8 /* AppDelegate.m */; };
 		8B3A2A891D9BAF5400BD20B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A2A881D9BAF5400BD20B8 /* ViewController.m */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B366E4B1DA2641A009D3655 /* AutoLayoutDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoLayoutDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B366E4E1DA26438009D3655 /* Test2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2Controller.h; sourceTree = "<group>"; };
+		8B366E4F1DA26438009D3655 /* Test2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2Controller.m; sourceTree = "<group>"; };
 		8B3A2A7E1D9BAF5400BD20B8 /* AutoLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3A2A821D9BAF5400BD20B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B3A2A841D9BAF5400BD20B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,11 +71,14 @@
 				8B3A2A881D9BAF5400BD20B8 /* ViewController.m */,
 				8B3A2A981D9BC31E00BD20B8 /* TestVisualLanguageController.h */,
 				8B3A2A991D9BC31E00BD20B8 /* TestVisualLanguageController.m */,
+				8B366E4E1DA26438009D3655 /* Test2Controller.h */,
+				8B366E4F1DA26438009D3655 /* Test2Controller.m */,
 				8B3A2A8A1D9BAF5400BD20B8 /* Main.storyboard */,
 				8B3A2A8D1D9BAF5400BD20B8 /* Assets.xcassets */,
 				8B3A2A8F1D9BAF5400BD20B8 /* LaunchScreen.storyboard */,
 				8B3A2A921D9BAF5400BD20B8 /* Info.plist */,
 				8B3A2A811D9BAF5400BD20B8 /* Supporting Files */,
+				8B366E4B1DA2641A009D3655 /* AutoLayoutDemo-Bridging-Header.h */,
 			);
 			path = AutoLayoutDemo;
 			sourceTree = "<group>";
@@ -154,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B366E501DA26438009D3655 /* Test2Controller.m in Sources */,
 				8B3A2A891D9BAF5400BD20B8 /* ViewController.m in Sources */,
 				8B3A2A9A1D9BC31E00BD20B8 /* TestVisualLanguageController.m in Sources */,
 				8B3A2A861D9BAF5400BD20B8 /* AppDelegate.m in Sources */,
@@ -269,10 +277,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AutoLayoutDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.themask.AutoLayoutDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AutoLayoutDemo/AutoLayoutDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -280,10 +291,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AutoLayoutDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.themask.AutoLayoutDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AutoLayoutDemo/AutoLayoutDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};
