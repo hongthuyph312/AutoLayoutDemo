@@ -36,6 +36,14 @@
     [greenView setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.view addSubview:greenView];
     
+    // Đối với Label có thể không cần set with heigh cho đối tượng
+    UILabel *lbCenter = [[UILabel alloc] init];
+    lbCenter.text = @"Đối với Label có thể không cần set with heigh cho đối tượng";
+    lbCenter.textAlignment = NSTextAlignmentCenter;
+    lbCenter.backgroundColor = [UIColor redColor];
+    lbCenter.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:lbCenter];
+    
     //VFL String
     NSDictionary *dict = @{@"redView":redView,
                            @"blueView":blueView,
@@ -57,15 +65,12 @@
                                                                         options:0
                                                                         metrics:nil
                                                                         views:dict]];
-    // Đối với Label có thể không cần set with heigh cho đối tượng
-    UILabel *lbCenter = [[UILabel alloc] init];
-    lbCenter.text = @"Center jfjaalsfjldk  ";
-    lbCenter.textAlignment = NSTextAlignmentCenter;
-    lbCenter.backgroundColor = [UIColor lightGrayColor];
-    lbCenter.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:lbCenter];
     
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[lbCenter]" options:NSLayoutFormatAlignAllCenterY metrics:nil views:@{@"lbCenter":lbCenter}]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[lbCenter]"
+                                                                      options:NSLayoutFormatAlignAllCenterY
+                                                                      metrics:nil
+                                                                        views:@{@"lbCenter":lbCenter}]];
+    
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[lbCenter]" options:NSLayoutFormatAlignAllCenterX metrics:nil views:@{@"lbCenter":lbCenter}]];
 }
 
